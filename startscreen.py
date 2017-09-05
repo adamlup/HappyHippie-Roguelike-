@@ -94,4 +94,3 @@ def print_start():
     print(instructions)
     time.sleep(4)
     os.system("clear")
-a
