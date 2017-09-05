@@ -4,13 +4,13 @@ import os
 start = (
 """
 '||  ||`
- ||  ||                           
+ ||  ||
  ||''||   '''|.  '||''|, '||''|,  ||   //
  ||  ||  .|''||   ||  ||  ||  ||  ||  //
 .||  ||. `|..||.  ||..|'  ||..|'   \,//
                   ||      ||        //
                  .||     .||       //
-'||  ||`                          
+'||  ||`
  ||  ||   ''                   ''
  ||''||   ||  '||''|, '||''|,  ||  .|''|,
  ||  ||   ||   ||  ||  ||  ||  ||  ||..||
@@ -64,9 +64,20 @@ autors = (
 #                                                                         #
 #                                                                         #
 ###########################################################################
-'''
-)
+''')
 
+instructions = (
+'''
+##########################################################################
+# If you want to move your Hippie just press one of the WASD buttons:    #
+#            W - to move up                                              #
+#            S - to move down                                            #
+#            A - to move left                                            #
+#            D - to move right                                           #
+# When you meet your smart and bad boss just play Hot-Worm game with him.#
+# If you win he will be defeted and you will get out.                    #
+##########################################################################
+''')
 
 def print_start():
     for letter in start:
@@ -78,7 +89,9 @@ def print_start():
     time.sleep(4)
     os.system("clear")
     print(story)
-    time.sleep(16)
+    time.sleep(4)
     os.system("clear")
-
-
+    print(instructions)
+    time.sleep(4)
+    os.system("clear")
+a
