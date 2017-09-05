@@ -11,8 +11,13 @@ def create_board(level_one_board):
     for element in level_one_board:
         board.append(list(element))
     return board
-
+    
 def print_board(board):
     for row in board:
         for char in row:
             print(char, end='')
+        print()
+
+def insert_player(board, width, height):
+    board[height][width] = '@'
+    return board
