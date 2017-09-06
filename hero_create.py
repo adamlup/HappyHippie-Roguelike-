@@ -1,5 +1,5 @@
 def hero_create():
-    name = input("Enter your name: ")
+    #name = input("Enter your name: ")
     hero_choice = input("Chose your hero, knight(hp = 100, attack = 20) tank(hp = 140, attack = 9: ")
     while True:
         if hero_choice == "knight":
