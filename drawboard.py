@@ -11,6 +11,18 @@ def create_board(level_one_board):
     for element in level_one_board:
         board.append(list(element))
     return board
+
+def draw_second_board():
+    level_second_board = levels_board.level_second_board() 
+    return level_second_board
+
+def create_second_board(level_second_board):
+    level_second_board = level_second_board.split('\n')
+    board = []
+
+    for element in level_second_board:
+        board.append(list(element))
+    return board
     
 def print_board(board):
     for row in board:
