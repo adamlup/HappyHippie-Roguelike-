@@ -1,5 +1,5 @@
 import time
-import os
+import sys
 
 win = (
 '''
@@ -33,12 +33,16 @@ lose = (
 '''
 )
 
+
 def win_screen():
     print(win)
     time.sleep(2)
-    os.system("clear")
+    sys.exit(0)
+    
+
 
 def lose_screen():
     print(lose)
     time.sleep(2)
-    os.system("clear")
+    sys.exit(0)
+    
