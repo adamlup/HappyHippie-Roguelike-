@@ -1,5 +1,6 @@
 import time
 import os
+import levels_board
 
 start = (
 """
@@ -74,6 +75,7 @@ instructions = (
 #            S - to move down                                            #
 #            A - to move left                                            #
 #            D - to move right                                           #
+#            Q - to exit                                                 #
 # When you meet your smart and bad boss just play Hot-Worm game with him.#
 # If you win he will be defeted and you will get out.                    #
 ##########################################################################
@@ -83,14 +85,16 @@ def print_start():
     for letter in start:
         print(letter, end='')
         time.sleep(0.004)
-    time.sleep(2)
+    time.sleep(1)
     os.system("clear")
     print(autors)
     time.sleep(4)
     os.system("clear")
     print(story)
-    time.sleep(4)
-    os.system("clear")
-    print(instructions)
-    time.sleep(4)
-    os.system("clear")
+    print('\n', instructions)
+    while True:
+        ready = input("If you are ready click Y: ")
+        if ready == "Y" or ready == "y":
+            os.system('clear')
+            break
+    return
